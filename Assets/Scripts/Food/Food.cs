@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
+using System;
 
-public class Food : MonoBehaviour
+public class Food : NetworkBehaviour
 {
     [SerializeField] GameObject particlePrefab;
+    public static event Action ServerOnFoodEaten;
 
     void OnTriggerEnter(Collider other)
     {
@@ -15,5 +18,7 @@ public class Food : MonoBehaviour
         Destroy(boom, 3f);
         Destroy(gameObject);
         FindObjectOfType<FoodSpawner>().SpawnFood();
+        ServerOnFoodEaten?.Invoke();
+        NetworkServer.Destroy(gameObject);
     }
 }
