@@ -828,6 +828,7 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 1737106357452364633, guid: ba6d700da8b10ba478d60cc947e7529d, type: 3}
   - {fileID: 2564288885050272488, guid: 46c197db3f0ffdb4baf92e18958245e0, type: 3}
+  - {fileID: 3189939752094581079, guid: f4562d466179f2b4084db2f787b69b56, type: 3}
   exceptionsDisconnect: 1
   snapshotSettings:
     bufferTimeMultiplier: 2
