@@ -10,7 +10,7 @@ public class FoodSpawner : NetworkBehaviour
 
     public override void OnStartServer()
     {
-        SpawnFood();
+        SpawnFood(gameObject);
         Food.ServerOnFoodEaten += SpawnFood;
     }
 
@@ -19,7 +19,7 @@ public class FoodSpawner : NetworkBehaviour
         Food.ServerOnFoodEaten -= SpawnFood;
     }
 
-    [Server]public void SpawnFood()
+    [Server]public void SpawnFood(GameObject playerWhoAte)
     {
         Vector3 pos = new Vector3(
             Random.Range(-xSize, xSize),

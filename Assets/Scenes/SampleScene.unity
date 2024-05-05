@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 1f6e615e38a1986458f4afc7c89c74ae, type: 2}
 --- !u!1 &87715473
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +829,7 @@ MonoBehaviour:
   - {fileID: 1737106357452364633, guid: ba6d700da8b10ba478d60cc947e7529d, type: 3}
   - {fileID: 2564288885050272488, guid: 46c197db3f0ffdb4baf92e18958245e0, type: 3}
   - {fileID: 3189939752094581079, guid: f4562d466179f2b4084db2f787b69b56, type: 3}
+  - {fileID: 6868670569204301540, guid: f0756ea880ffc1043bf943aabbd94281, type: 3}
   exceptionsDisconnect: 1
   snapshotSettings:
     bufferTimeMultiplier: 2
@@ -913,7 +914,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &1332108214
 MeshCollider:

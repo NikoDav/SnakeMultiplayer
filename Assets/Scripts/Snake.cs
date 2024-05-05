@@ -9,11 +9,10 @@ public class Snake : MonoBehaviour
     [SerializeField] GameObject tailPrefab;
 
     public float Speed { get { return speed; } }
-    public List<GameObject> Tails { get; } = new List<GameObject>();
 
     void Start()
     {
-        Tails.Add(gameObject);
+        
     }
 
     void Update()
@@ -27,9 +26,5 @@ public class Snake : MonoBehaviour
         if (other.CompareTag("Border")) SceneManager.LoadScene(0);
     }
 
-    public void AddTail()
-    {
-        Instantiate(tailPrefab, Tails[Tails.Count-1].transform.position, Quaternion.identity);
-        speed += speedChange;
-    }
+    
 }
