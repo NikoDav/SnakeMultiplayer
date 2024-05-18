@@ -8,6 +8,7 @@ public class PlayerName : NetworkBehaviour
 {
     [SerializeField] private TMP_Text _text;
     [SyncVar(hook = nameof(HandleName))] private string _playerName;
+    private string Name => _playerName;
 
 
     private void HandleName(string oldText, string newText)
